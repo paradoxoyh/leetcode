@@ -7,14 +7,13 @@ public:
         return (num == 1)? true: false;
     }
     int subIsUgly(int num, int k){
-        if(num <= 0)
-            return num;
-        while(true){
-            if(num%k == 0)
-                num = num / k;
-            else
-                break;
-        }
+        if(num > 0)
+            while(true){
+                if(num%k == 0)
+                    num = num / k;
+                else
+                    break;
+            }
         return num;
     }
 };
