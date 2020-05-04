@@ -19,7 +19,6 @@ public:
                 nums[i] = nums[temp];
                 nums[temp] = temp;
             }
-            int temp = nums[i];  
         }
         return res;
     }
